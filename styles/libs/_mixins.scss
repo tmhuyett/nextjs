@@ -27,6 +27,13 @@
 /// @param {mixed} $lr Left/right padding.
 /// @param {list} $pad Optional extra padding (in the following order top, right, bottom, left)
 /// @param {bool} $important If true, adds !important.
+
+@mixin grayscale_element($value) {
+	-webkit-filter: #{"grayscale(#{$value})"};
+	-moz-filter: #{"grayscale(#{$value})"};
+	filter:#{"grayscale(#{$value})"};
+}
+
 @mixin padding($tb, $lr, $pad: (0,0,0,0), $important: null) {
 
 	@if $important {
@@ -259,6 +266,7 @@
 				$horizontal-align: map-get($settings, 'horizontal-align');
 			}
 
+		
 		// Columns.
 			$columns: null;
 
