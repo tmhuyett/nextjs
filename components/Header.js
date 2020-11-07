@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import Deersvg2 from '../public/deersvg2.svg';
 
 
 
@@ -12,11 +13,11 @@ const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div>
 </div>
-        <div><i></i>
+        <div><i></i><Deersvg2 />
             <div className="inner">
             
-                <h1 className="grayscale">James River Deer Barriers</h1>
-                <p className="weCare">"we care"</p>
+                <h1 className="grayscale">Hill City Deer Barriers</h1>
+                <p className="weCare">"we are your family and we'll always be there for you"</p>
             </div>
         </div>
         <nav className="navigate">
