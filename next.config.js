@@ -1,13 +1,7 @@
 const path = require('path')
 const glob = require('glob')
-const withSvgr = require('next-plugin-svgr');
 
-
-
-module.exports = withSvgr ({
-
- 
-  
+module.exports = {
   webpack: (config, { dev }) => {
     config.module.rules.push(
       {
@@ -43,4 +37,4 @@ module.exports = withSvgr ({
   //     '/': { page: '/' }
   //   }
   // }
-});
+}

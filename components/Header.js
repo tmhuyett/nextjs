@@ -1,26 +1,21 @@
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import Deersvg2 from '../public/deersvg2.svg';
-
-
-
-
-
-
-
+import faGem from '@fortawesome/fontawesome-free-regular/faGem'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div>
-</div>
-        <div><i></i><Deersvg2 />
+        <div className="logo">
+            {/*<span className="icon fa-diamond"></span>*/}
+            <FontAwesomeIcon icon={faGem} transform="grow-18" />
+        </div>
+        <div className="content">
             <div className="inner">
-            
-                <h1 className="grayscale">Hill City Deer Barriers</h1>
-                <p className="weCare">"we are your family and we'll always be there for you"</p>
+                <h1>Dimension</h1>
+                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
+                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
             </div>
         </div>
-        <nav className="navigate">
+        <nav>
             <ul>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
