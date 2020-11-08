@@ -7,7 +7,6 @@
 /* Header */
 
 	#header {
-	
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'center');
@@ -35,35 +34,11 @@
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - #{_size(border-width) * 1});
 				width: _size(border-width);
-				//height: calc(3.5rem + 1px);
+				height: calc(3.5rem + 1px);
 				background: _palette(border);
 			}
 		}
 
-		.deer
-
-		{
-		.whitetail {
-			fill: orange;
-		}	
-		}
-
-		.navigate {
-
-			padding-top: 0;
-			margin-top: 0;
-		}
-
-		.weCare {
-			font-size: 1.5em;
-			font-style: italic;
-			padding-bottom: 0px;
-			margin-bottom: 0;
-			padding-top: 0;
-			margin-top: 0;
-		}
-
-		
 		> :first-child {
 			margin-top: 0;
 
@@ -76,7 +51,7 @@
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			//border: solid _size(border-width) _palette(border);
+			border: solid _size(border-width) _palette(border);
 			border-radius: 100%;
 
 			.icon {
@@ -114,17 +89,13 @@
 				letter-spacing: _font(letter-spacing);
 				font-size: 0.8rem;
 				line-height: 2;
-				padding-bottom: 40px;
 			}
 		}
 
 		nav {
-		
 			ul {
-				
 				@include vendor('display', 'flex');
 				margin-bottom: 0;
-				margin-top: 30px;
 				list-style: none;
 				padding-left: 0;
 				border: solid _size(border-width) _palette(border);
@@ -140,7 +111,7 @@
 
 					a {
 						display: block;
-						min-width: 5.5rem;
+						min-width: 7.5rem;
 						height: 2.75rem;
 						line-height: 2.75rem;
 						padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
@@ -184,7 +155,7 @@
 
 		.body.is-article-visible & {
 			@include vendor('transform', 'scale(0.95)');
-			@include vendor('filter', 'blur(0.2rem)');
+			@include vendor('filter', 'blur(0.1rem)');
 			opacity: 0;
 		}
 
@@ -221,7 +192,7 @@
 
 				&:before {
 					top: calc(-2rem - 1px);
-					//height: calc(2rem + 1px);
+					height: calc(2rem + 1px);
 				}
 			}
 
